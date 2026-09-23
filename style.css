@@ -341,3 +341,19 @@ footer{
     font-size:23px;
   }
 }
+/* تنظیم جای لوگوی صفحه اصلی */
+.hero-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto 25px auto;
+}
+
+.hero-logo img {
+    display: block;
+    margin: 0 auto;
+    max-width: 220px;
+    height: auto;
+}
