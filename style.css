@@ -360,3 +360,26 @@ footer {
         height: auto;
     }
 }
+.hero-logo img {
+    display: block;
+    width: 850px;
+    max-width: none;
+    height: auto;
+    margin: 0 auto;
+}
+
+.hero-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 25px;
+}
+
+@media(max-width:800px){
+    .hero-logo img {
+        width: 650px;
+        max-width: 95%;
+        height: auto;
+    }
+}
