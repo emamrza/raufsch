@@ -337,3 +337,26 @@ footer {
     font-size: 23px;
   }
 }
+.hero-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 25px auto;
+}
+
+.hero-logo img {
+    display: block;
+    width: 500px;
+    max-width: 85%;
+    height: auto;
+    margin: 0 auto;
+}
+
+@media(max-width:800px){
+    .hero-logo img {
+        width: 380px;
+        max-width: 85%;
+        height: auto;
+    }
+}
