@@ -1,5 +1,5 @@
-/* 
-=========================================================
+```css
+/* =========================================================
    مدارس بالنده امام رضا (ع) سبزوار
    Main Website Styles
    ========================================================= */
@@ -35,7 +35,7 @@ body {
   justify-content: space-between;
   gap: 25px;
 
-  padding: 12px 5%;
+  padding: 10px 5%;
 
   background: rgba(255, 255, 255, 0.97);
   border-bottom: 1px solid #e1e6df;
@@ -46,9 +46,10 @@ body {
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
-  min-width: 250px;
-}```css
+  gap: 14px;
+  min-width: 280px;
+}
+
 .brand-logo {
   display: flex;
   align-items: center;
@@ -61,9 +62,6 @@ body {
   height: 125px;
   object-fit: contain;
   display: block;
-}
-```
-
 }
 
 .brand-text {
@@ -230,6 +228,7 @@ body {
 .hero-logo {
   margin-bottom: 20px;
 }
+
 .hero-logo img {
   width: 190px;
   height: 190px;
@@ -624,7 +623,7 @@ body {
 .component-grid article {
   position: relative;
 
-  padding: 27px 25px 27px 25px;
+  padding: 27px 25px;
 
   color: #31463c;
 
@@ -842,7 +841,7 @@ footer {
 }
 
 /* =========================================================
-   MOBILE
+   TABLET
    ========================================================= */
 
 @media (max-width: 1050px) {
@@ -854,7 +853,6 @@ footer {
   .main-nav a,
   .main-nav summary {
     padding: 7px 8px;
-
     font-size: 12px;
   }
 
@@ -864,11 +862,24 @@ footer {
 
 }
 
+/* =========================================================
+   MOBILE
+   ========================================================= */
 
 @media (max-width: 850px) {
 
   .site-header {
-    padding: 10px 4%;
+    padding: 8px 4%;
+  }
+
+  .brand {
+    min-width: 0;
+    gap: 10px;
+  }
+
+  .brand-logo img {
+    width: 85px;
+    height: 85px;
   }
 
   .menu-toggle {
@@ -887,7 +898,8 @@ footer {
     flex-direction: column;
     align-items: stretch;
 
-padding: 16px 5%;
+    padding: 16px 5%;
+
     background: #fff;
 
     border-top: 1px solid #e2e7e2;
@@ -932,14 +944,6 @@ padding: 16px 5%;
   .brand-subtitle {
     font-size: 11px;
   }
-```css
-.brand-logo img {
-  width: 85px;
-  height: 85px;
-}
-```
-
-  }
 
   .cards,
   .three-columns,
@@ -955,12 +959,15 @@ padding: 16px 5%;
   }
 
   .hero-logo img {
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
   }
 
 }
 
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
 
 @media (max-width: 600px) {
 
@@ -985,6 +992,23 @@ padding: 16px 5%;
     grid-template-columns: 1fr;
   }
 
+  .site-header {
+    padding: 7px 4%;
+  }
+
+  .brand-logo img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .brand-title {
+    font-size: 13px;
+  }
+
+  .brand-subtitle {
+    font-size: 10px;
+  }
+
   .hero {
     min-height: 570px;
 
@@ -992,8 +1016,8 @@ padding: 16px 5%;
   }
 
   .hero-logo img {
-    width: 105px;
-    height: 105px;
+    width: 150px;
+    height: 150px;
   }
 
   .hero-small-title {
@@ -1044,7 +1068,6 @@ padding: 16px 5%;
 
 }
 
-
 /* =========================================================
    ACCESSIBILITY
    ========================================================= */
@@ -1053,6 +1076,6 @@ a:focus,
 button:focus,
 summary:focus {
   outline: 3px solid rgba(197, 154, 60, 0.45);
-
   outline-offset: 3px;
 }
+```
