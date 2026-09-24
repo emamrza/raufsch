@@ -48,15 +48,22 @@ body {
   align-items: center;
   gap: 12px;
   min-width: 250px;
+}```css
+.brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
+
 .brand-logo img {
-  width: 110px;
-  height: 110px;
+  width: 125px;
+  height: 125px;
   object-fit: contain;
   display: block;
-};
-  object-fit: contain;
-};
+}
+```
+
 }
 
 .brand-text {
